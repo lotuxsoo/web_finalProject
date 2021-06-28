@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+    </head>
+    
+    <body id="main">
+        <header>
+        <p id="wise">⏰시간을 지배하는 사람은 인생을 지배할 줄 아는 사람이다⚡</p>
+        </header>
+
+        <nav id = "sub_menu">
+            <ul>
+                <li> <a class="menu" href="index.html" title="HOME">HOME</a></li>
+                <li> <a class="menu" href="todo.html" title="TO DO LIST">TO DO LIST</a></li> 
+                <li> <a class="menu" href="timetable.html" title="TIME TABLE">TIME TABLE</a></li>
+                <li> <a class="menu" href="helper.html" title="STUDY HELPER">STUDY HELPER</a></li>
+                <li> <a class="menu"href="diary.html" title="DIARY">DIARY</a></li>
+            </ul>
+        </nav>
+
+        <article>
+        
+        <script type="text/javascript">
+        var stopped=false;
+        
+        function start(){
+            dom= document.getElementById("sec");
+            dom.value= parseInt(dom.value)+1;                
+            if(!stopped) setTimeout(start,1000);
+        }
+        </script>
+
+        <div id="time_set">
+            기상 시간: &nbsp; <input type="time" size="5"> &nbsp; 취침 시간: &nbsp; <input type="time" size="5"> &nbsp;
+            총 공부 시간: &nbsp; <input type="text" size="7">
+
+            <fieldset style= "width:250px; height:150px;" id ="stopwatch"> 
+            <legend> 🤍공부시간 기록🤍 </legend>
+            <form action="">   
+            <input type="button" value="Start" onclick="stopped=false;setTimeout(start,1000);" />
+            <input type="button" value="Stop" onclick="stopped=true;" />
+            <input type="reset" /> <br><br>
+            <input id="sec" type="text" value="0" size="2"/> seconds
+            </form>
+            </fieldset>
+        </div>
+        </article>
+
+        <article>
+        <table border="" id="ttable">
+        <caption>🤍TIME TABLE(10분 단위로 체크하세요!)🤍</caption>
+        <tbody>
+      <tr>
+         <td>5</td> <td onclick="this.style.background='#78EAFF'"> </td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"> </td>
+        </tr>
+        <tr>
+            <td>6</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"> </td> <td onclick="this.style.background='#78EAFF'"> </td>
+        </tr>
+        <tr>
+            <td>7</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"> </td> <td onclick="this.style.background='#78EAFF'"> </td>
+        </tr>
+        <tr>
+            <td>8</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"> </td>
+        </tr>
+        <tr>
+            <td>9</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>10</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>11</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>12</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>13</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>14</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>15</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>16</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>17</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>18</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>19</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>20</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>21</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>22</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>23</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>24</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>1</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>2</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>3</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+        </tr>
+        <tr>
+            <td>4</td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td> <td onclick="this.style.background='#78EAFF'"></td>
+      </tr>
+
+       </tbody>
+    </table>
+    </article>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+    </head>
+    
+    <body id = "main" >
+        <header>
+        <script type="text/javascript">
+
+            var today = new Date();
+            var y = today.getFullYear();
+            var m = today.getMonth()+1;
+            var d = today.getDate();
+            var dw = today.getDay();
+           switch(dw){
+            case 0: dw = "일요일💙" ; break;
+            case 1: dw = "월요일💙"; break;
+            case 2: dw = "화요일💙"; break;
+            case 3: dw = "수요일💙"; break;
+            case 4: dw = "목요일💙"; break;
+            case 5: dw = "금요일💙"; break;
+            case 6: dw = "토요일💙"; break;
+          }
+          document.write("<h5 id='dname'>" +  y +"년 "+m+"월 "+d+"일의 기록을 남겨보세요✨ "+ "</h5>" );
+        </script>
+        </header>
+
+        <nav id = "sub_menu">
+            <ul>
+                <li> <a class="menu" href="index.html" title="HOME">HOME</a></li>
+                <li> <a class="menu" href="todo.html" title="TO DO LIST">TO DO LIST</a></li> 
+                <li> <a class="menu" href="timetable.html" title="TIME TABLE">TIME TABLE</a></li>
+                <li> <a class="menu" href="helper.html" title="STUDY HELPER">STUDY HELPER</a></li>
+                <li> <a class="menu"href="diary.html" title="DIARY">DIARY</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <section>
+            <p id ="dd"> 🤍TODAY🤍 <br/>
+                <textarea name="promise" rows="30" cols="70"> 오늘의 하루를 기록해보세요!</textarea>
+            </section> 
+            <section>
+            <p id ="good"> 🤍GOOD JOB🤍 <br/>
+                <textarea name="promise" rows="14" cols="70"> </textarea>
+            </section>
+            <section>
+            <p id ="bad"> 🖤BAD JOB🖤 <br/>
+                <textarea name="promise" rows="14" cols="70"> </textarea>
+            </section>
+        </article>
+
+        <footer>
+            <p id = "mb"> made by SUYEON CHOI </p>
+        </footer>
+    </body>
+</html>

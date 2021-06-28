@@ -1,0 +1,38 @@
+    html {font-family: 'Do Hyeon', sans-serif;}
+    td {text-align:center}
+    h4 {text-decoration: underline;  bottom:535px; font-size: 45px; position: absolute; left: 380px;}    
+    p {font-size: 20px;}
+    .menu {text-decoration: none; text-decoration-line: none; color: black; margin: 20px; padding: 5px; border: 5px black solid;;}
+
+    #todo {border-radius: 10px; position: absolute; right: 150px;top: 150px;}
+    #stopwatch {border-radius: 10px; position: absolute; top: 40px; left:100px;
+    top: 100px; left: 170px; 
+    }
+    #wise {font-size:35px; position:absolute; top:55px; left:55px; font-weight: bold;}
+    #time_set{
+        position: absolute;
+        top: 220px;
+        left: 75px;
+        font-size: 25px;
+    }
+    
+    #ttable {table-layout: fixed; position: absolute; width: 30%; right: 180px; top: 60px;}
+    #sent {position: absolute; left: 90px; top: 120px}    
+    #dd {position:absolute; left:165px; top:115px;}
+    #good {position: absolute; right:120px; top:100px; }
+    #bad {position: absolute; right:120px; top:370px;}
+
+    h3 {background-color: #87CEFA;  letter-spacing:10px;
+        border-radius: 10px; position: absolute; font-weight:bold; font-size: 60px; top: 120px; left: 350px;}
+    #today_result{ font-size:30px; }
+    #radio{ font-size: 30px; position: absolute; top: 320px; left:100px;}
+
+    #stwm {font-size:60px; position: absolute; bottom:525px; left: 555px; }
+    #main {background-color : aliceblue;}
+    #mb {font-size:20px; position: absolute; right:45px; bottom:15px;}
+    #menu_bar {position: absolute; font-weight:bold;
+        font-size: 45px; top: 250px; left: 150px; margin-top: 140px;}
+    #dname {position:absolute; bottom:555px; font-size: 35px; left:170px}
+    #sub_menu { font-weight: bold; position: absolute; bottom:660px; right:35px; font-size: 20px;}
+
+    li{display: inline; }

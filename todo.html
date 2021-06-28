@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+
+<body id="main">
+    <header>
+    <script type="text/javascript">
+      var today = new Date();
+      var y = today.getFullYear();
+      var m = today.getMonth()+1;
+      var d = today.getDate();
+      var dw = today.getDay();
+     switch(dw){
+      case 0: dw = "일요일💙" ; break;
+      case 1: dw = "월요일💙"; break;
+      case 2: dw = "화요일💙"; break;
+      case 3: dw = "수요일💙"; break;
+      case 4: dw = "목요일💙"; break;
+      case 5: dw = "금요일💙"; break;
+      case 6: dw = "토요일💙"; break;
+    }
+    document.write("<h4>" + "💙오늘은 "+ y +"년 "+m+"월 "+d+"일 "+dw + "</h4>");
+    </script>
+    </header>
+
+    <nav id = "sub_menu">
+        <ul>
+            <li> <a class="menu" href="index.html" title="HOME">HOME</a></li>
+            <li> <a class="menu" href="todo.html" title="TO DO LIST">TO DO LIST</a></li> 
+            <li> <a class="menu" href="timetable.html" title="TIME TABLE">TIME TABLE</a></li>
+            <li> <a class="menu" href="helper.html" title="STUDY HELPER">STUDY HELPER</a></li>
+            <li> <a class="menu"href="diary.html" title="DIARY">DIARY</a></li>
+        </ul>
+    </nav>
+    
+    <article>
+        <section>
+        <p id ="sent"> 🤍오늘의 다짐🤍 <br/>
+        <textarea name="promise" rows="10" cols="60"> 오늘의 다짐을 적으세요!</textarea>
+        </section> 
+        
+        <section>
+        <div id = "radio">
+        <h5 span style="text-decoration: underline">🤍TODAY'S SENTENCE🤍</h5>
+        <form action="" id="radio_form">
+            <input type="radio" class="radio" name="hi" value="v1" onclick="isChecked=0;">시간은 그대를 위해 멈추어 기다리지 않는다.<br>
+            <input type="radio" class="radio" name="hi" value="v2" onclick="isChecked=1;">가장 위대한 일은 남들이 자고 있을때 이루어진다.<br>
+            <input type="radio" class="radio" name="hi" value="v3" onclick="isChecked=2;">피할 수 없다면 즐겨라!<br/>
+            <input type="button" value="CLICK" onclick="radio_sel();">
+        </form>
+        <h5 id="today_result">오늘의 명언을 고르세요! </h5>
+        </div>
+
+        <script type="text/javascript">
+            var isChecked = -1, list="";
+            
+            function radio_sel(){
+                switch(isChecked){
+                    case 0 : list = "시간은 그대를 위해 멈추어 기다리지 않는다."; break;
+                    case 1 : list = "가장 위대한 일은 남들이 자고 있을때 이루어진다."; break;
+                    case 2 : list = "피할 수 없다면 즐겨라!"; break;
+                    default : list = "없음"; break;
+                }
+                var result_list = list ;
+                document.getElementById("today_result").innerText = result_list;
+                
+                document.getElementById("radio_form").style.visibility="hidden";
+                document.getElementById("radio_form").style.display="none";
+
+            }
+        </script>
+        </section>
+    </article>
+    
+    <article>
+       <fieldset style= "width:350px; height:500px;" id ="todo" style="visibility: hidden;">
+           <legend> 🤍TO DO LIST🤍 </legend><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/><br/>
+               <input type="checkbox" name="list" /> &nbsp <input type="text" style="width:290px"/> <br/>          
+       </fieldset>
+    </article>
+</body>
+</html>
