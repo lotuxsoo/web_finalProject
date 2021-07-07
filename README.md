@@ -1,8 +1,5 @@
-# web_finalProject
-study planner(21-1 web programming basis)
-
 # Study Planner
-
+----------------
 *주요기능
   *오늘의 다짐 적기 
   *오늘의 명언 고르기
